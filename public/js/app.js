@@ -1,8 +1,8 @@
 async function multiplicar(event) {
   event.preventDefault();
 
-  const num1 = document.getElementById("num1").value;
-  const num2 = document.getElementById("num2").value;
+  const num1 = document.querySelector("#num1").value;
+  const num2 = document.querySelector("#num2").value;
 
   const response = await axios({
 
@@ -14,5 +14,5 @@ async function multiplicar(event) {
 
   });
 
-  document.getElementById("resultado").textContent = `El resultado es: ${response.data}`;
+  document.querySelector("#resultado").textContent = `El resultado es: ${response.data}`;
 }

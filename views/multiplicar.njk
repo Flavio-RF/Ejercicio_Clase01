@@ -7,7 +7,7 @@
         <div class="d-flex justify-content-center">
 
             <div class="border shadow p-4 bg-body rounded">
-                <form action="/multiplicar" method="GET">
+                <form onsubmit="multiplicar(event)">
                     <h1 class="fs-3 mb-3">Ingresar dos números para multiplicar</h1>
                     <div class="mb-3">
                         <label for="num1" class="form-label">Número 1</label>
@@ -19,9 +19,9 @@
                     </div>
                     <div class="mb-3">
                         <label for="resultado" class="form-label">Resultado</label>
-                        <p>{{resultado}}</p>
+                        <p id="resultado"></p>
                     </div>
-                    <button type="button" class="btn btn-success">Multiplicar</button>
+                    <button type="submit" class="btn btn-success">Multiplicar</button>
                 </form>
 
             </div>

@@ -20,10 +20,7 @@ module.exports = {
     },
     multiplicar: (req, res) => {
         const { num1, num2 } = req.body;
-        const result = num1 * num2
-        res.send(result, { resultado })
-        console.log(num1, num2)
-        console.log(resultado)
+        res.end(String(num1 * num2)); // Notar que no es posible retornar un número. Sólo se puede retornar strings, objetos o arrays.
     },
 
 }
